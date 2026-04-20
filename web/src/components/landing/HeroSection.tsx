@@ -6,17 +6,18 @@ import { WhatsAppGlyph } from "@/components/landing/WhatsAppGlyph";
 
 function HeroHeading() {
   return (
-    <div className="flex flex-col items-center pb-4 text-center">
-      <h1
-        id="hero-heading"
-        className="font-orbitron text-[clamp(26px,8.6vw,31px)] font-bold leading-[clamp(30px,9.6vw,35px)] tracking-[-0.9px] text-white"
-      >
-        <span className="block">You’ve Received a</span>
-        <span className="block">
-          <span className="text-[#79d1ff]">Neetrino</span>
-          <span> Gift Card</span>
-        </span>
+    <div className="mt-[280px] flex flex-col items-center pb-4 text-center">
+      <h1 id="hero-heading" className="sr-only">
+        You&apos;ve Received a Neetrino Gift Card
       </h1>
+      <Image
+        src="/received-gift-card.png"
+        alt="You've Received a Neetrino Gift Card"
+        width={734}
+        height={148}
+        className="h-auto w-full max-w-[342px]"
+        priority
+      />
     </div>
   );
 }

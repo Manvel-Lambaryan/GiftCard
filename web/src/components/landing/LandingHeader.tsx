@@ -34,19 +34,8 @@ export function LandingHeader({ language }: LandingHeaderProps) {
           </Link>
         </div>
         <div className="mt-3 flex items-center">
-          <Link
-            href={PHONE_TEL}
-            className="inline-flex h-[33px] w-[44px] shrink-0 items-center justify-center rounded-full border border-[rgba(121,209,255,0.25)] bg-[rgba(35,43,123,0.5)] p-1 min-[390px]:h-[37px] min-[390px]:w-[48px]"
-            aria-label={text.callAria}
-          >
-            <Image
-              alt=""
-              src={ASSETS.phoneIcon}
-              width={20}
-              height={20}
-              className="h-4 w-4 object-contain min-[390px]:h-5 min-[390px]:w-5"
-              unoptimized
-            />
+          <Link href={PHONE_TEL} className="relative block h-[57px] w-[56px] shrink-0" aria-label={text.callAria}>
+            <Image alt="" src={ASSETS.headerPhone} fill className="object-cover" unoptimized />
           </Link>
         </div>
       </div>

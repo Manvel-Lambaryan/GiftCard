@@ -4,7 +4,7 @@ export const ASSETS = {
   /** Horizontal wordmark; stored in `public/logo-mark.png`. */
   logo: "/logo-mark.png",
   cardMockup: "https://www.figma.com/api/mcp/asset/498da19f-c2f4-4157-8d9e-29194455bfc9",
-  headerPhone: "https://www.figma.com/api/mcp/asset/a196888c-7246-484f-a7d7-1cf53d2afb95",
+  headerPhone: "https://www.figma.com/api/mcp/asset/62caa339-b3d7-4944-b6de-9f90dc812245",
   cloudBg: "https://www.figma.com/api/mcp/asset/24b74c5c-192d-4361-8ca1-6b8cf1a9d31a",
   cloudGlass: "https://www.figma.com/api/mcp/asset/9101549b-7416-4afc-a26c-2f7b902dc4ed",
   planetBg: "https://www.figma.com/api/mcp/asset/e52bfe24-a086-4b66-b3dc-950bfb118cc6",
@@ -37,7 +37,8 @@ export const ASSETS = {
   chatAccent5: "https://www.figma.com/api/mcp/asset/b9aab542-75f7-4d09-bf29-979dec1df3b5",
   chatAccent6: "https://www.figma.com/api/mcp/asset/a30f379b-2704-415b-bab4-50044544f32d",
   linkShadow: "https://www.figma.com/api/mcp/asset/37463b93-4d74-48e6-bac3-7a065c036f69",
-  phoneIcon: "https://www.figma.com/api/mcp/asset/d2144a67-20ec-455d-ab14-7aa91a2ec952",
+  phoneEllipse: "https://www.figma.com/api/mcp/asset/644e25e8-4c87-44d2-8ffe-482e32f39c31",
+  phoneIcon: "https://www.figma.com/api/mcp/asset/5be7a3c9-cb6a-4267-a477-cd484d16538f",
   emailIcon: "https://www.figma.com/api/mcp/asset/4662481b-079a-4bcf-843a-535cd52a9508",
   shareIcon: "https://www.figma.com/api/mcp/asset/e816ebd5-05f7-4cbf-9650-1075a6720e2e",
   socialWhatsappA: "https://www.figma.com/api/mcp/asset/54795b2e-de0b-4026-be06-f8e505adc9ea",

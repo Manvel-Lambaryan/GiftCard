@@ -101,7 +101,8 @@ function ContactLinks() {
     <div className="flex flex-wrap items-center justify-center gap-4 text-white min-[390px]:gap-6">
       <Link href={PHONE_TEL} className="flex items-center gap-1.5 font-manrope text-xs">
         <span className="relative size-[19px] shrink-0">
-          <Image alt="" src={ASSETS.phoneIcon} fill className="object-contain" unoptimized />
+          <Image alt="" src={ASSETS.phoneEllipse} fill className="object-cover" unoptimized />
+          <Image alt="" src={ASSETS.phoneIcon} fill className="object-cover" unoptimized />
         </span>
         {PHONE_LABEL}
       </Link>

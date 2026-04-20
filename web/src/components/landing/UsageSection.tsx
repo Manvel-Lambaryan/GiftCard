@@ -1,9 +1,5 @@
 import Image from "next/image";
 import { ASSETS } from "@/lib/figma-assets";
-import { ChatBotIcon } from "@/components/landing/icons/ChatBotIcon";
-import { CloudIcon } from "@/components/landing/icons/CloudIcon";
-import { DecentralizeIcon } from "@/components/landing/icons/DecentralizeIcon";
-import { PlanetIcon } from "@/components/landing/icons/PlanetIcon";
 
 const ROWS = [
   {
@@ -72,19 +68,35 @@ export function UsageSection() {
 function UsageIcon({ type }: { type: (typeof ROWS)[number]["icon"] }) {
   switch (type) {
     case "planet":
-      return <PlanetIcon />;
+      return (
+        <span className="relative size-12 shrink-0">
+          <Image alt="" src={ASSETS.websiteUsageIcon} fill className="object-contain" sizes="48px" />
+        </span>
+      );
     case "mobile":
       return (
         <span className="relative h-[45px] w-[31.5px] shrink-0">
-          <Image alt="" src={ASSETS.mobileAppIcon} fill className="object-contain" unoptimized />
+          <Image alt="" src={ASSETS.usageMobileAppIcon} fill className="object-contain" sizes="32px" />
         </span>
       );
     case "decentralize":
-      return <DecentralizeIcon />;
+      return (
+        <span className="relative size-12 shrink-0">
+          <Image alt="" src={ASSETS.usageCrmIcon} fill className="object-contain" sizes="48px" />
+        </span>
+      );
     case "cloud":
-      return <CloudIcon />;
+      return (
+        <span className="relative size-12 shrink-0">
+          <Image alt="" src={ASSETS.usageSaasIcon} fill className="object-contain" sizes="48px" />
+        </span>
+      );
     case "ai":
-      return <ChatBotIcon />;
+      return (
+        <span className="relative size-12 shrink-0">
+          <Image alt="" src={ASSETS.usageAiIcon} fill className="object-contain" sizes="48px" />
+        </span>
+      );
     default: {
       const _exhaustive: never = type;
       return _exhaustive;

@@ -3,8 +3,15 @@ import Link from "next/link";
 import { ASSETS } from "@/lib/figma-assets";
 import { EMAIL_MAILTO, WHATSAPP_URL } from "@/lib/links";
 import { WhatsAppGlyph } from "@/components/landing/WhatsAppGlyph";
+import { LANDING_TEXT, type Language } from "@/components/landing/translations";
 
-export function FinalCtaSection() {
+type FinalCtaSectionProps = {
+  language: Language;
+};
+
+export function FinalCtaSection({ language }: FinalCtaSectionProps) {
+  const text = LANDING_TEXT[language].finalCta;
+
   return (
     <section
       className="flex w-full flex-col gap-6 py-8"
@@ -15,9 +22,9 @@ export function FinalCtaSection() {
         id="final-cta-heading"
         className="text-center font-orbitron text-[clamp(21px,7.2vw,24px)] font-bold leading-[clamp(28px,8.4vw,32px)] text-[#dfe0ff]"
       >
-        Ready to Use
+        {text.titleLines[0]}
         <br />
-        Your Gift Card?
+        {text.titleLines[1]}
       </h2>
       <div className="flex flex-col gap-3">
         <Link
@@ -34,7 +41,7 @@ export function FinalCtaSection() {
           </span>
           <WhatsAppGlyph />
           <span className="text-center font-manrope text-[15px] font-bold min-[360px]:text-base">
-            Write to Us on WhatsApp
+            {text.whatsappCta}
           </span>
         </Link>
         <Link
@@ -42,7 +49,7 @@ export function FinalCtaSection() {
           className="flex w-full items-center justify-center rounded-full bg-gradient-to-r from-[#3025ff] to-[#1d1699] py-4 font-manrope text-[15px] font-bold text-white transition hover:brightness-110 min-[360px]:text-base"
           data-node-id="3:878"
         >
-          Contact Us
+          {text.emailCta}
         </Link>
       </div>
     </section>

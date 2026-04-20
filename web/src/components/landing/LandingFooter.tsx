@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { LANDING_TEXT, type Language } from "@/components/landing/translations";
 import { ASSETS } from "@/lib/figma-assets";
 import { EMAIL_LABEL, EMAIL_MAILTO, PHONE_LABEL, PHONE_TEL, SITE_URL, WHATSAPP_URL } from "@/lib/links";
 
@@ -70,9 +71,15 @@ function SocialIcon({ item }: { item: SocialItem }) {
   );
 }
 
-function SocialLinks() {
+type LandingFooterProps = {
+  language: Language;
+};
+
+function SocialLinks({ language }: LandingFooterProps) {
+  const text = LANDING_TEXT[language].footer;
+
   return (
-    <nav className="flex flex-wrap items-center justify-center gap-3 min-[390px]:gap-4" aria-label="Social links">
+    <nav className="flex flex-wrap items-center justify-center gap-3 min-[390px]:gap-4" aria-label={text.socialAria}>
       {SOCIAL.map((s) => (
         <Link
           key={s.label}
@@ -108,20 +115,22 @@ function ContactLinks() {
   );
 }
 
-function FooterLegal() {
+function FooterLegal({ language }: LandingFooterProps) {
+  const text = LANDING_TEXT[language].footer.legal;
+
   return (
     <div className="flex max-w-[271px] flex-col items-center px-2 pt-6 text-center font-manrope text-xs leading-4 text-white/40">
       <p>
-        Copyright © 2026 | All Rights Reserved, Created by{" "}
+        {text.copyrightPrefix}{" "}
         <Link href={SITE_URL} className="underline underline-offset-2 hover:text-white/60">
-          Neetrino IT Company
+          {text.companyName}
         </Link>
       </p>
     </div>
   );
 }
 
-export function LandingFooter() {
+export function LandingFooter({ language }: LandingFooterProps) {
   return (
     <footer
       className="flex w-full flex-col items-center gap-6 pb-12 pt-7 min-[390px]:pt-8"
@@ -137,9 +146,9 @@ export function LandingFooter() {
           unoptimized
         />
       </div>
-      <SocialLinks />
+      <SocialLinks language={language} />
       <ContactLinks />
-      <FooterLegal />
+      <FooterLegal language={language} />
     </footer>
   );
 }

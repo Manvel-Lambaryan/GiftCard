@@ -1,7 +1,14 @@
 import Image from "next/image";
 import { ASSETS } from "@/lib/figma-assets";
+import { LANDING_TEXT, type Language } from "@/components/landing/translations";
 
-export function ValuesSection() {
+type ValuesSectionProps = {
+  language: Language;
+};
+
+export function ValuesSection({ language }: ValuesSectionProps) {
+  const text = LANDING_TEXT[language].values;
+
   return (
     <section className="flex w-full flex-col gap-6" data-node-id="3:746" aria-labelledby="values-heading">
       <div className="ml-2 flex flex-col gap-2">
@@ -9,12 +16,12 @@ export function ValuesSection() {
           id="values-heading"
           className="font-orbitron text-2xl font-bold leading-8 text-[#dfe0ff]"
         >
-          What Does Your Gift Card Give You?
+          {text.title}
         </h2>
         <p className="font-manrope text-base font-normal leading-6 text-[#c6c5d3]">
-          Get an immediate deduction on the final cost
+          {text.descriptionLines[0]}
           <br />
-          of your software development project.
+          {text.descriptionLines[1]}
         </p>
       </div>
       <div
@@ -23,7 +30,7 @@ export function ValuesSection() {
       >
         <div className="flex h-[31px] w-full items-center justify-between gap-[7px] px-3">
           <span className="font-manrope text-sm font-extrabold uppercase leading-5 tracking-[1.4px] text-[#79d1ff]">
-            Available values
+            {text.availableValues}
           </span>
           <span className="relative h-[31px] w-[35.059px] shrink-0">
             <Image alt="" src={ASSETS.walletIcon} fill className="object-contain" unoptimized />

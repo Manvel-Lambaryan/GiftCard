@@ -1,64 +1,23 @@
 import Image from "next/image";
 import { ASSETS } from "@/lib/figma-assets";
+import { LANDING_TEXT, type Language } from "@/components/landing/translations";
 
-const STEPS = [
-  {
-    n: "1",
-    title: "Contact on WhatsApp",
-    body: (
-      <>
-        Start a conversation with our project
-        <br />
-        manager to activate your card.
-      </>
-    ),
-  },
-  {
-    n: "2",
-    title: "Send photo/details",
-    body: (
-      <>
-        Provide a photo of your physical card or
-        <br />
-        its unique identification details.
-      </>
-    ),
-  },
-  {
-    n: "3",
-    title: "Choose product",
-    body: (
-      <>
-        Discuss your needs and select the digital
-        <br />
-        product you want to develop.
-      </>
-    ),
-  },
-  {
-    n: "4",
-    title: "Amount deducted",
-    body: (
-      <>
-        The card value is automatically deducted
-        <br />
-        from your final project quote.
-      </>
-    ),
-    glow: true as const,
-  },
-] as const;
+type StepsSectionProps = {
+  language: Language;
+};
 
-export function StepsSection() {
+export function StepsSection({ language }: StepsSectionProps) {
+  const text = LANDING_TEXT[language].steps;
+
   return (
     <section className="relative flex w-full flex-col gap-12" data-node-id="3:821" aria-labelledby="steps-heading">
       <h2
         id="steps-heading"
         className="text-center font-orbitron text-2xl font-bold leading-8 text-[#dfe0ff]"
       >
-        4 Simple Steps to
+        {text.titleLines[0]}
         <br />
-        Redeem
+        {text.titleLines[1]}
       </h2>
       <div className="relative flex w-full flex-col gap-12">
         <div
@@ -70,15 +29,17 @@ export function StepsSection() {
             <Image alt="" src={ASSETS.verticalLine} fill className="object-cover" unoptimized />
           </div>
         </div>
-        {STEPS.map((step) => (
+        {text.items.map((step) => (
           <div key={step.n} className="relative flex gap-6">
-            <StepCircle label={step.n} glow={"glow" in step ? step.glow : false} />
+            <StepCircle label={step.n} glow={Boolean(step.glow)} />
             <div className="flex min-w-0 flex-col gap-1">
               <h3 className="font-manrope text-lg font-bold leading-7 text-[#dfe0ff]">
                 {step.title}
               </h3>
               <p className="font-manrope text-sm font-normal leading-5 text-[#c6c5d3]">
-                {step.body}
+                {step.lines[0]}
+                <br />
+                {step.lines[1]}
               </p>
             </div>
           </div>

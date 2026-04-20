@@ -110,21 +110,13 @@ function ContactLinks() {
 
 function FooterLegal() {
   return (
-    <div className="flex max-w-[271px] flex-col items-center gap-4 px-2 pt-6 text-center font-manrope text-xs leading-4 text-white/40">
+    <div className="flex max-w-[271px] flex-col items-center px-2 pt-6 text-center font-manrope text-xs leading-4 text-white/40">
       <p>
         Copyright © 2026 | All Rights Reserved, Created by{" "}
         <Link href={SITE_URL} className="underline underline-offset-2 hover:text-white/60">
           Neetrino IT Company
         </Link>
       </p>
-      <div className="flex gap-4 uppercase tracking-[1px]">
-        <a href="https://neetrino.com/privacy" className="text-[10px] hover:text-white/60">
-          Privacy
-        </a>
-        <a href="https://neetrino.com/terms" className="text-[10px] hover:text-white/60">
-          Terms
-        </a>
-      </div>
     </div>
   );
 }

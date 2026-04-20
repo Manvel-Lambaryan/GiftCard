@@ -6,3 +6,10 @@ body {
   background: #05061b;
   color: #ffffff;
 }
+
+.hero-reference-bg {
+  background-image: url("/hero-floor-bg.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}

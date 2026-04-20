@@ -24,15 +24,6 @@ const SOCIAL = [
     showScreen: true,
   },
   {
-    href: "https://t.me/",
-    label: "Telegram",
-    glow: ASSETS.socialTelegramA,
-    icon: ASSETS.socialTelegramB,
-    ellipse: ASSETS.socialEllipseBlue,
-    insetGlow: "inset_0px_0px_8px_0px_rgba(13,180,252,0.32)",
-    showScreen: true,
-  },
-  {
     href: "https://instagram.com/",
     label: "Instagram",
     glow: ASSETS.socialInstagramA,
@@ -40,24 +31,6 @@ const SOCIAL = [
     ellipse: ASSETS.socialEllipsePink,
     insetGlow: "inset_0px_0px_8px_0px_rgba(190,13,252,0.32)",
     showScreen: false,
-  },
-  {
-    href: "https://m.me/",
-    label: "Messenger",
-    glow: ASSETS.socialMessengerA,
-    icon: ASSETS.socialMessengerB,
-    ellipse: ASSETS.socialEllipseMsg,
-    insetGlow: "inset_0px_0px_8px_0px_rgba(13,166,252,0.32)",
-    showScreen: true,
-  },
-  {
-    href: "https://www.linkedin.com/",
-    label: "LinkedIn",
-    glow: ASSETS.socialLinkedinA,
-    icon: ASSETS.socialLinkedinB,
-    ellipse: ASSETS.socialEllipseIn,
-    insetGlow: "inset_0px_0px_8px_0px_rgba(13,137,252,0.32)",
-    showScreen: true,
   },
 ] as const satisfies readonly SocialItem[];
 

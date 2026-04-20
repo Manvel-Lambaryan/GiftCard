@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+import { ASSETS } from "@/lib/figma-assets";
 import { EMAIL_MAILTO, WHATSAPP_URL } from "@/lib/links";
 import { WhatsAppGlyph } from "@/components/landing/WhatsAppGlyph";
 
@@ -11,7 +13,7 @@ export function FinalCtaSection() {
     >
       <h2
         id="final-cta-heading"
-        className="text-center font-orbitron text-2xl font-bold leading-8 text-[#dfe0ff]"
+        className="text-center font-orbitron text-[clamp(21px,7.2vw,24px)] font-bold leading-[clamp(28px,8.4vw,32px)] text-[#dfe0ff]"
       >
         Ready to Use
         <br />
@@ -22,15 +24,22 @@ export function FinalCtaSection() {
           href={WHATSAPP_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex w-full items-center justify-center gap-[18px] rounded-full bg-[rgba(255,255,255,0.09)] py-4 text-white shadow-[0_20px_60px_rgba(48,37,255,0.15)] transition hover:bg-[rgba(255,255,255,0.14)]"
+          className="relative flex w-full items-start justify-center gap-3 rounded-full bg-[rgba(255,255,255,0.09)] px-3 py-4 text-white transition hover:bg-[rgba(255,255,255,0.14)] min-[390px]:gap-[18px] min-[390px]:px-0"
           data-node-id="3:875"
         >
+          <span className="pointer-events-none absolute inset-[151px_453.5px_-151px_-453.5px]">
+            <span className="absolute inset-[-8.93%_-7.27%_-80.36%_-7.27%]">
+              <Image alt="" src={ASSETS.linkShadow} fill className="object-cover" unoptimized />
+            </span>
+          </span>
           <WhatsAppGlyph />
-          <span className="font-manrope text-base font-bold">Write to Us on WhatsApp</span>
+          <span className="text-center font-manrope text-[15px] font-bold min-[360px]:text-base">
+            Write to Us on WhatsApp
+          </span>
         </Link>
         <Link
           href={EMAIL_MAILTO}
-          className="flex w-full items-center justify-center rounded-full bg-gradient-to-r from-[#3025ff] to-[#1d1699] py-4 font-manrope text-base font-bold text-white transition hover:brightness-110"
+          className="flex w-full items-center justify-center rounded-full bg-gradient-to-r from-[#3025ff] to-[#1d1699] py-4 font-manrope text-[15px] font-bold text-white transition hover:brightness-110 min-[360px]:text-base"
           data-node-id="3:878"
         >
           Contact Us

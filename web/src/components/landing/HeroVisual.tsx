@@ -4,12 +4,9 @@ import { ASSETS } from "@/lib/figma-assets";
 export function HeroVisual() {
   return (
     <>
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-[678px] w-full overflow-hidden">
-        <div className="h-full w-full rotate-180">
-          <div
-            className="relative h-full w-full min-w-0 overflow-hidden"
-            data-node-id="3:965"
-          >
+      <div className="pointer-events-none absolute left-1/2 top-0 flex h-[678px] w-screen -translate-x-1/2 items-center justify-center">
+        <div className="rotate-180">
+          <div className="relative h-[678px] w-screen overflow-hidden blur-[0px]" data-node-id="3:965">
             <Image
               alt=""
               src={ASSETS.heroBackground}
@@ -22,9 +19,9 @@ export function HeroVisual() {
           </div>
         </div>
       </div>
-      <div className="pointer-events-none absolute -left-8 -top-4 flex h-[min(520px,90vw)] w-[min(525px,120vw)] items-center justify-center md:left-1/2 md:-translate-x-1/3">
+      <div className="pointer-events-none absolute left-1/2 top-[-18px] flex h-[min(520.325px,95vw)] w-[min(525.027px,135vw)] -translate-x-[57%] items-center justify-center">
         <div className="rotate-[32.79deg]">
-          <div className="relative h-[min(370px,55vh)] w-[min(386px,92vw)]" data-node-id="25:120">
+          <div className="relative h-[min(370.277px,62vw)] w-[min(386px,92vw)]" data-node-id="25:120">
             <Image
               alt="Neetrino gift card mockup"
               src={ASSETS.cardMockup}

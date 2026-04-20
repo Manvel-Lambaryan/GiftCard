@@ -58,7 +58,7 @@ export function StepsSection() {
       >
         4 Simple Steps to Redeem
       </h2>
-      <div className="relative flex flex-col gap-12 pl-2">
+      <div className="relative flex w-full flex-col gap-12">
         <div
           className="absolute bottom-[30px] left-[23px] top-2 w-px overflow-hidden"
           data-node-id="3:825"
@@ -87,14 +87,12 @@ export function StepsSection() {
 }
 
 function StepCircle({ label, glow }: { label: string; glow?: boolean }) {
+  const className = glow
+    ? "z-[1] flex size-12 shrink-0 items-center justify-center rounded-full bg-[#28307f] pb-[11.5px] pt-[10.5px] font-space-grotesk text-base font-bold text-[#79d1ff] shadow-[0px_0px_4px_0px_#79d1ff,0px_0px_14px_0px_#79d1ff]"
+    : "z-[1] flex size-12 shrink-0 items-center justify-center rounded-full border border-[rgba(121,209,255,0.3)] bg-[#28307f] pb-[12.5px] pt-[11.5px] font-space-grotesk text-base font-bold text-[#79d1ff]";
+
   return (
-    <div
-      className={`z-[1] flex size-12 shrink-0 items-center justify-center rounded-full border border-[rgba(121,209,255,0.3)] bg-[#28307f] font-space-grotesk text-base font-bold text-[#79d1ff] ${
-        glow
-          ? "border-transparent shadow-[0px_0px_4px_0px_#79d1ff,0px_0px_14px_0px_#79d1ff]"
-          : ""
-      }`}
-    >
+    <div className={className}>
       {label}
     </div>
   );

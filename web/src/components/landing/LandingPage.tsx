@@ -13,7 +13,7 @@ export function LandingPage() {
     <div className="relative min-h-screen overflow-x-hidden bg-[#05061b] text-white">
       <HeroVisual />
       <LandingHeader />
-      <main className="relative z-[1] mx-auto flex w-full max-w-[392px] flex-col gap-[30px] px-6 pb-[47px] pt-[min(180px,28vh)]">
+      <main className="relative z-[1] mx-auto flex w-full flex-col gap-[30px] px-4 pb-[47px] pt-[min(231px,34vh)] min-[390px]:px-6">
         <HeroSection />
         <ValuesSection />
         <UsageSection />
@@ -21,7 +21,7 @@ export function LandingPage() {
         <AboutSection />
         <FinalCtaSection />
       </main>
-      <div className="relative z-[1] mx-auto w-full max-w-[392px] px-6">
+      <div className="relative z-[1] mx-auto w-full px-4 min-[390px]:px-6">
         <LandingFooter />
       </div>
     </div>

@@ -4,16 +4,19 @@ import { ASSETS } from "@/lib/figma-assets";
 export function HeroVisual() {
   return (
     <>
-      <div className="pointer-events-none absolute left-1/2 top-0 flex h-[678px] w-[393px] max-w-full -translate-x-1/2 items-center justify-center overflow-hidden">
-        <div className="flex-none rotate-180">
-          <div className="relative h-[678px] w-full min-w-[280px] max-w-[393px]" data-node-id="3:965">
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-[678px] w-full overflow-hidden">
+        <div className="h-full w-full rotate-180">
+          <div
+            className="relative h-full w-full min-w-0 overflow-hidden"
+            data-node-id="3:965"
+          >
             <Image
               alt=""
               src={ASSETS.heroBackground}
               fill
-              className="object-cover object-top"
+              className="!inset-auto !left-0 !top-[-15.93%] !h-[115.93%] !w-full !max-w-none object-cover"
               priority
-              sizes="(max-width:768px) 100vw, 393px"
+              sizes="100vw"
               unoptimized
             />
           </div>

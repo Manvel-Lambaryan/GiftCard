@@ -14,7 +14,7 @@ export function HeroSection() {
       <div className="flex flex-col items-center pb-4 text-center">
         <h1
           id="hero-heading"
-          className="font-orbitron text-[clamp(1.5rem,5vw,1.938rem)] font-bold leading-[35px] tracking-[-0.9px] text-white"
+          className="font-orbitron text-[clamp(1.375rem,5.2vw,1.938rem)] font-bold leading-[35px] tracking-[-0.9px] text-white"
         >
           <span className="block">You’ve Received a</span>
           <span className="block">
@@ -45,7 +45,7 @@ export function HeroSection() {
         </Link>
         <div className="flex justify-center pt-1">
           <div
-            className="flex items-center gap-2 rounded-full border border-[rgba(70,70,81,0.1)] bg-[#ff8c00] px-[17px] py-2"
+            className="flex items-center gap-2 rounded-full border border-[rgba(70,70,81,0.1)] bg-[#ff8c00] px-[17px] py-[9px]"
             data-node-id="3:741"
           >
             <span className="relative block size-2.5 shrink-0">

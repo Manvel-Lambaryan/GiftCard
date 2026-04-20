@@ -4,7 +4,7 @@ import { ASSETS } from "@/lib/figma-assets";
 export function ValuesSection() {
   return (
     <section className="flex w-full flex-col gap-6" data-node-id="3:746" aria-labelledby="values-heading">
-      <div className="flex flex-col gap-2">
+      <div className="ml-2 flex flex-col gap-2">
         <h2
           id="values-heading"
           className="font-orbitron text-2xl font-bold leading-8 text-[#dfe0ff]"

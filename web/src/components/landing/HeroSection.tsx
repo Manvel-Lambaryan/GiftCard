@@ -6,7 +6,7 @@ import { WhatsAppGlyph } from "@/components/landing/WhatsAppGlyph";
 
 function HeroHeading() {
   return (
-    <div className="mt-[310px] flex flex-col items-center pb-4 text-center">
+    <div className="mx-auto mt-[310px] flex flex-col items-center pb-4 text-center">
       <h1 id="hero-heading" className="sr-only">
         You&apos;ve Received a Neetrino Gift Card
       </h1>
@@ -24,7 +24,7 @@ function HeroHeading() {
 
 function HeroDescription() {
   return (
-    <div className="min-h-[87px] w-full max-w-[342px]">
+    <div className="mx-auto mt-3 min-h-[87px] w-full max-w-[342px]">
       <div className="flex flex-col items-center px-[10.91px] text-center">
         <p className="font-manrope text-[clamp(16px,5vw,18px)] font-normal leading-[clamp(26px,7.8vw,29.25px)] text-[#c6c5d3]">
           Use it as a direct discount on your next
@@ -38,7 +38,7 @@ function HeroDescription() {
 
 function HeroActions() {
   return (
-    <div className="flex w-full max-w-[342px] flex-col gap-4">
+    <div className="mx-auto flex w-full max-w-[342px] flex-col gap-4">
       <Link
         href={WHATSAPP_URL}
         target="_blank"
@@ -71,7 +71,7 @@ function HeroActions() {
 export function HeroSection() {
   return (
     <section
-      className="flex min-h-[352px] w-full max-w-[370px] flex-col items-center justify-center"
+      className="mx-auto flex min-h-[352px] w-full max-w-[370px] flex-col items-center justify-center"
       data-node-id="3:717"
       aria-labelledby="hero-heading"
     >

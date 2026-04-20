@@ -19,16 +19,16 @@ export function HeroVisual() {
           </div>
         </div>
       </div>
-      <div className="pointer-events-none absolute left-1/2 top-[-18px] flex h-[min(520.325px,95vw)] w-[min(525.027px,135vw)] -translate-x-[57%] items-center justify-center">
+      <div className="pointer-events-none absolute left-1/2 top-[-46px] flex h-[min(860.325px,156vw)] w-[min(875.027px,208vw)] -translate-x-[50%] items-center justify-center">
         <div className="rotate-[32.79deg]">
-          <div className="relative h-[min(370.277px,62vw)] w-[min(386px,92vw)]" data-node-id="25:120">
+          <div className="relative h-[min(620.277px,102vw)] w-[min(646px,146vw)]" data-node-id="25:120">
             <Image
               alt="Neetrino gift card mockup"
               src={ASSETS.cardMockup}
               fill
               className="object-cover"
               priority
-              sizes="(max-width:768px) 92vw, 386px"
+              sizes="(max-width:768px) 146vw, 646px"
               unoptimized
             />
           </div>

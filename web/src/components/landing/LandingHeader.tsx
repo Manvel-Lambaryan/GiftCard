@@ -13,14 +13,14 @@ export function LandingHeader({ language }: LandingHeaderProps) {
 
   return (
     <header
-      className="absolute left-1/2 top-0 z-50 flex h-[102px] w-screen -translate-x-1/2 flex-col items-center justify-end"
+      className="absolute left-1/2 top-0 z-50 flex h-[102px] w-screen -translate-x-1/2 flex-col items-center justify-start pt-1"
       data-node-id="3:920"
     >
-      <div className="flex h-[72px] w-full items-end justify-between pl-3 pr-4 min-[390px]:pl-[14px] min-[390px]:pr-6">
-        <div className="flex items-end gap-2 min-[390px]:gap-3">
+      <div className="flex h-[72px] w-full items-start justify-between pl-3 pr-4 min-[390px]:pl-[14px] min-[390px]:pr-6">
+        <div className="flex items-end">
           <Link
             href="/"
-            className="relative block aspect-[130/37] h-[33px] w-[116px] shrink-0 min-[390px]:h-[37px] min-[390px]:w-[130px]"
+            className="relative mt-4 block aspect-[130/37] h-[33px] w-[116px] shrink-0 min-[390px]:h-[37px] min-[390px]:w-[130px]"
           >
             <Image
               alt="Neetrino"
@@ -32,21 +32,30 @@ export function LandingHeader({ language }: LandingHeaderProps) {
               unoptimized
             />
           </Link>
+        </div>
+        <div className="mt-3 flex items-center gap-2 min-[390px]:gap-3">
           <nav
             aria-label={text.languageAria}
-            className="mb-1 inline-flex h-[33px] items-center rounded-full border border-[rgba(121,209,255,0.25)] bg-[rgba(35,43,123,0.5)] p-1 min-[390px]:h-[37px]"
+            className="inline-flex h-[33px] items-center rounded-full border border-[rgba(121,209,255,0.25)] bg-[rgba(35,43,123,0.5)] p-1 min-[390px]:h-[37px]"
           >
             <LanguageButton href="/?lang=en" label={text.englishLabel} active={language === "en"} />
             <LanguageButton href="/?lang=hy" label={text.armenianLabel} active={language === "hy"} />
           </nav>
+          <Link
+            href={PHONE_TEL}
+            className="inline-flex h-[33px] w-[44px] shrink-0 items-center justify-center rounded-full border border-[rgba(121,209,255,0.25)] bg-[rgba(35,43,123,0.5)] p-1 min-[390px]:h-[37px] min-[390px]:w-[48px]"
+            aria-label={text.callAria}
+          >
+            <Image
+              alt=""
+              src={ASSETS.phoneIcon}
+              width={20}
+              height={20}
+              className="h-4 w-4 object-contain min-[390px]:h-5 min-[390px]:w-5"
+              unoptimized
+            />
+          </Link>
         </div>
-        <Link
-          href={PHONE_TEL}
-          className="relative h-[52px] w-[51px] shrink-0 min-[390px]:h-[57px] min-[390px]:w-14"
-          aria-label={text.callAria}
-        >
-          <Image alt="" src={ASSETS.headerPhone} fill className="object-contain" unoptimized />
-        </Link>
       </div>
     </header>
   );

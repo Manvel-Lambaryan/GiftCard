@@ -1,7 +1,8 @@
 /** Remote assets from Figma MCP (refresh if URLs expire ~7 days). */
 export const ASSETS = {
   heroBackground: "https://www.figma.com/api/mcp/asset/6ca2e925-edce-498b-ae66-b0c7f7c3f18a",
-  logo: "https://www.figma.com/api/mcp/asset/763bc98d-1442-4010-8fe3-1216760193ae",
+  /** Horizontal wordmark; stored in `public/logo-mark.png`. */
+  logo: "/logo-mark.png",
   cardMockup: "https://www.figma.com/api/mcp/asset/498da19f-c2f4-4157-8d9e-29194455bfc9",
   headerPhone: "https://www.figma.com/api/mcp/asset/a196888c-7246-484f-a7d7-1cf53d2afb95",
   cloudBg: "https://www.figma.com/api/mcp/asset/24b74c5c-192d-4361-8ca1-6b8cf1a9d31a",

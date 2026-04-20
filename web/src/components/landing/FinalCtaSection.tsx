@@ -22,7 +22,7 @@ export function FinalCtaSection() {
           href={WHATSAPP_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex w-full items-center justify-center gap-4 rounded-full bg-[rgba(255,255,255,0.09)] py-4 text-white shadow-[0_20px_60px_rgba(48,37,255,0.15)] transition hover:bg-[rgba(255,255,255,0.14)]"
+          className="flex w-full items-center justify-center gap-[18px] rounded-full bg-[rgba(255,255,255,0.09)] py-4 text-white shadow-[0_20px_60px_rgba(48,37,255,0.15)] transition hover:bg-[rgba(255,255,255,0.14)]"
           data-node-id="3:875"
         >
           <WhatsAppGlyph />

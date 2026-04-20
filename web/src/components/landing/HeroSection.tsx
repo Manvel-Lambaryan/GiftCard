@@ -23,7 +23,7 @@ export function HeroSection() {
           </span>
         </h1>
       </div>
-      <div className="flex max-w-[342px] flex-col items-center px-[10px] text-center">
+      <div className="flex max-w-[342px] flex-col items-center px-[11px] text-center">
         <p className="font-manrope text-lg font-normal leading-[29.25px] text-[#c6c5d3]">
           Use it as a direct discount on your next
           <br />
@@ -43,7 +43,7 @@ export function HeroSection() {
             Write to Us on WhatsApp
           </span>
         </Link>
-        <div className="flex justify-center pt-1">
+        <div className="flex justify-center pt-4">
           <div
             className="flex items-center gap-2 rounded-full border border-[rgba(70,70,81,0.1)] bg-[#ff8c00] px-[17px] py-[9px]"
             data-node-id="3:741"

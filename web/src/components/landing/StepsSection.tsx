@@ -60,7 +60,7 @@ export function StepsSection() {
       </h2>
       <div className="relative flex flex-col gap-12 pl-2">
         <div
-          className="absolute bottom-8 left-[29px] top-2 w-px overflow-hidden"
+          className="absolute bottom-[30px] left-[23px] top-2 w-px overflow-hidden"
           data-node-id="3:825"
           aria-hidden
         >

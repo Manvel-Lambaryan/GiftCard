@@ -17,8 +17,15 @@ export function LandingFooter() {
       className="flex w-full flex-col items-center gap-6 pb-12 pt-8"
       data-node-id="3:881"
     >
-      <div className="relative h-[37px] w-[130px]">
-        <Image alt="Neetrino" src={ASSETS.logo} fill className="object-cover" unoptimized />
+      <div className="relative flex justify-center">
+        <Image
+          alt="Neetrino"
+          src={ASSETS.logo}
+          width={130}
+          height={37}
+          className="aspect-[130/37] h-[37px] w-[130px] object-contain"
+          unoptimized
+        />
       </div>
       <nav className="flex flex-wrap items-center justify-center gap-4" aria-label="Social links">
         {SOCIAL.map((s) => (

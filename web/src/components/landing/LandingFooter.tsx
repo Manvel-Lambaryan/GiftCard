@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ASSETS } from "@/lib/figma-assets";
-import { EMAIL_LABEL, EMAIL_MAILTO, PHONE_LABEL, PHONE_TEL, SITE_URL } from "@/lib/links";
+import { EMAIL_LABEL, EMAIL_MAILTO, PHONE_LABEL, PHONE_TEL, SITE_URL, WHATSAPP_URL } from "@/lib/links";
 
 type SocialItem = {
   href: string;
@@ -15,7 +15,7 @@ type SocialItem = {
 
 const SOCIAL = [
   {
-    href: "https://api.whatsapp.com/send?phone=37444343000",
+    href: WHATSAPP_URL,
     label: "WhatsApp",
     glow: ASSETS.socialWhatsappA,
     icon: ASSETS.socialWhatsappB,
@@ -24,7 +24,7 @@ const SOCIAL = [
     showScreen: true,
   },
   {
-    href: "https://instagram.com/",
+    href: "https://www.instagram.com/neetrino_it_company/",
     label: "Instagram",
     glow: ASSETS.socialInstagramA,
     icon: ASSETS.socialInstagramB,

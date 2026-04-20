@@ -56,7 +56,9 @@ export function StepsSection() {
         id="steps-heading"
         className="text-center font-orbitron text-2xl font-bold leading-8 text-[#dfe0ff]"
       >
-        4 Simple Steps to Redeem
+        4 Simple Steps to
+        <br />
+        Redeem
       </h2>
       <div className="relative flex w-full flex-col gap-12">
         <div

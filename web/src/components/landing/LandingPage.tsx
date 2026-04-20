@@ -16,8 +16,12 @@ export function LandingPage() {
       <main className="relative z-[1] mx-auto flex w-full flex-col gap-[30px] px-4 pb-[47px] pt-[min(255px,38vh)] min-[390px]:px-6">
         <HeroSection />
         <ValuesSection />
-        <UsageSection />
-        <StepsSection />
+        <div className="mt-6">
+          <UsageSection />
+        </div>
+        <div className="mt-6">
+          <StepsSection />
+        </div>
         <AboutSection />
         <FinalCtaSection />
       </main>

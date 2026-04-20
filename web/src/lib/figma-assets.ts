@@ -13,7 +13,7 @@ export const ASSETS = {
   whatsappMask: "https://www.figma.com/api/mcp/asset/d62f2d43-ba82-4c70-9106-70638bd468ff",
   whatsappIcon: "https://www.figma.com/api/mcp/asset/1a0edfa9-e119-49b3-aea7-3f86b1543135",
   clockIcon: "https://www.figma.com/api/mcp/asset/bb20ac38-5d75-47ea-b9a2-e2fed639437e",
-  walletIcon: "https://www.figma.com/api/mcp/asset/a3569499-adf3-4255-b014-1e8762a41e2c",
+  walletIcon: "https://www.figma.com/api/mcp/asset/0f78106b-0671-4e16-b316-a9afcb326463",
   checkOne: "https://www.figma.com/api/mcp/asset/c4cc5338-55dc-437a-b6d5-0ffc24e1c1b0",
   checkTwo: "https://www.figma.com/api/mcp/asset/62f9c53d-0946-40c8-b03c-7dd58d833d43",
   mobileAppIcon: "https://www.figma.com/api/mcp/asset/89f28dcf-3222-43e2-8e94-4103e337c4ae",

@@ -21,11 +21,11 @@ export function ValuesSection() {
         className="flex w-full flex-col gap-4 rounded-[30px] bg-[rgba(0,20,220,0.18)] px-6 pb-6 pt-[21px]"
         data-node-id="3:752"
       >
-        <div className="flex items-center justify-center gap-2">
+        <div className="flex h-[31px] w-full items-center justify-between gap-[7px] px-3">
           <span className="font-manrope text-sm font-extrabold uppercase leading-5 tracking-[1.4px] text-[#79d1ff]">
             Available values
           </span>
-          <span className="relative h-[31px] w-[35px] shrink-0">
+          <span className="relative h-[31px] w-[35.059px] shrink-0">
             <Image alt="" src={ASSETS.walletIcon} fill className="object-contain" unoptimized />
           </span>
         </div>

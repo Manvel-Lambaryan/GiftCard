@@ -4,10 +4,10 @@ import { ASSETS } from "@/lib/figma-assets";
 export function HeroVisual() {
   return (
     <>
-      <div className="pointer-events-none absolute left-1/2 top-0 flex h-[770px] w-screen -translate-x-1/2 items-center justify-center">
+      <div className="pointer-events-none absolute left-1/2 top-0 flex h-[820px] w-screen -translate-x-1/2 items-center justify-center">
         <div>
           <div
-            className="hero-reference-bg relative h-[770px] w-screen overflow-hidden blur-[0px]"
+            className="hero-reference-bg relative h-[820px] w-screen overflow-hidden blur-[0px]"
             data-node-id="3:965"
           />
         </div>

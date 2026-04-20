@@ -7,6 +7,29 @@ body {
   color: #ffffff;
 }
 
+[data-lang="hy"] {
+  font-family: var(--font-armenian), var(--font-manrope), system-ui, sans-serif;
+}
+
+[data-lang="hy"] .font-manrope,
+[data-lang="hy"] .font-orbitron,
+[data-lang="hy"] .font-space-grotesk {
+  font-family: var(--font-armenian), var(--font-manrope), system-ui, sans-serif;
+}
+
+[data-lang="hy"] h1,
+[data-lang="hy"] h2,
+[data-lang="hy"] h3,
+[data-lang="hy"] p,
+[data-lang="hy"] span,
+[data-lang="hy"] a {
+  letter-spacing: normal;
+}
+
+[data-lang="hy"] .uppercase {
+  text-transform: none;
+}
+
 .hero-reference-bg {
   background-color: #05061b;
   background-image:

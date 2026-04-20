@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Manrope, Orbitron, Space_Grotesk } from "next/font/google";
+import { Manrope, Noto_Sans_Armenian, Orbitron, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
 const orbitron = Orbitron({
@@ -12,6 +12,12 @@ const manrope = Manrope({
   subsets: ["latin"],
   variable: "--font-manrope",
   weight: ["400", "500", "600", "700", "800"],
+});
+
+const armenian = Noto_Sans_Armenian({
+  subsets: ["armenian", "latin"],
+  variable: "--font-armenian",
+  weight: ["400", "500", "600", "700"],
 });
 
 const spaceGrotesk = Space_Grotesk({
@@ -33,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${orbitron.variable} ${manrope.variable} ${spaceGrotesk.variable} font-manrope antialiased`}
+        className={`${orbitron.variable} ${manrope.variable} ${armenian.variable} ${spaceGrotesk.variable} font-manrope antialiased`}
       >
         {children}
       </body>

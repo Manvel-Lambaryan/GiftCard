@@ -15,7 +15,11 @@ type LandingPageProps = {
 
 export function LandingPage({ language }: LandingPageProps) {
   return (
-    <div className="relative min-h-screen overflow-x-hidden bg-[#05061b] text-white">
+    <div
+      className="relative min-h-screen overflow-x-hidden bg-[#05061b] text-white"
+      data-lang={language}
+      lang={language}
+    >
       <HeroVisual />
       <LandingHeader language={language} />
       <main className="relative z-[1] mx-auto flex w-full flex-col gap-[30px] px-4 pb-[47px] pt-[min(255px,38vh)] min-[390px]:px-6">

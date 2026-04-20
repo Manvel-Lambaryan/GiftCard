@@ -33,14 +33,7 @@ export function LandingHeader({ language }: LandingHeaderProps) {
             />
           </Link>
         </div>
-        <div className="mt-3 flex items-center gap-2 min-[390px]:gap-3">
-          <nav
-            aria-label={text.languageAria}
-            className="inline-flex h-[33px] items-center rounded-full border border-[rgba(121,209,255,0.25)] bg-[rgba(35,43,123,0.5)] p-1 min-[390px]:h-[37px]"
-          >
-            <LanguageButton href="/?lang=en" label={text.englishLabel} active={language === "en"} />
-            <LanguageButton href="/?lang=hy" label={text.armenianLabel} active={language === "hy"} />
-          </nav>
+        <div className="mt-3 flex items-center">
           <Link
             href={PHONE_TEL}
             className="inline-flex h-[33px] w-[44px] shrink-0 items-center justify-center rounded-full border border-[rgba(121,209,255,0.25)] bg-[rgba(35,43,123,0.5)] p-1 min-[390px]:h-[37px] min-[390px]:w-[48px]"
@@ -58,25 +51,5 @@ export function LandingHeader({ language }: LandingHeaderProps) {
         </div>
       </div>
     </header>
-  );
-}
-
-type LanguageButtonProps = {
-  href: string;
-  label: string;
-  active: boolean;
-};
-
-function LanguageButton({ href, label, active }: LanguageButtonProps) {
-  const baseClassName =
-    "rounded-full px-2.5 py-1 font-manrope text-xs font-bold leading-4 transition min-[390px]:px-3";
-  const activeClassName = active
-    ? "bg-[#79d1ff] text-[#05061b]"
-    : "text-[#dfe0ff] hover:bg-[rgba(121,209,255,0.22)]";
-
-  return (
-    <Link href={href} className={`${baseClassName} ${activeClassName}`}>
-      {label}
-    </Link>
   );
 }

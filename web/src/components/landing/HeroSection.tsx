@@ -14,17 +14,19 @@ function HeroHeading({ language }: HeroSectionProps) {
 
   return (
     <div className="mx-auto mt-[310px] flex flex-col items-center pb-4 text-center">
-      <h1 id="hero-heading" className="sr-only">
-        {text.heading}
-      </h1>
-      <Image
-        src="/received-gift-card.png"
-        alt={text.imageAlt}
-        width={734}
-        height={148}
-        className="h-auto w-full max-w-[342px]"
-        priority
-      />
+      <>
+        <h1 id="hero-heading" className="sr-only">
+          {text.heading}
+        </h1>
+        <Image
+          src="/received-gift-card.png"
+          alt={text.imageAlt}
+          width={734}
+          height={148}
+          className="h-auto w-full max-w-[342px]"
+          priority
+        />
+      </>
     </div>
   );
 }

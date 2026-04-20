@@ -1,4 +1,4 @@
-export type Language = "en" | "hy";
+export type Language = "en";
 
 type UsageRow = {
   title: string;
@@ -24,9 +24,6 @@ type FooterLegal = {
 export type LandingText = {
   header: {
     callAria: string;
-    languageAria: string;
-    englishLabel: string;
-    armenianLabel: string;
   };
   hero: {
     heading: string;
@@ -68,9 +65,6 @@ export const LANDING_TEXT: Readonly<Record<Language, LandingText>> = {
   en: {
     header: {
       callAria: "Call Neetrino",
-      languageAria: "Switch language",
-      englishLabel: "EN",
-      armenianLabel: "HY",
     },
     hero: {
       heading: "You've Received a Neetrino Gift Card",
@@ -161,109 +155,6 @@ export const LANDING_TEXT: Readonly<Record<Language, LandingText>> = {
       socialAria: "Social links",
       legal: {
         copyrightPrefix: "Copyright © 2026 | All Rights Reserved, Created by",
-        companyName: "Neetrino IT Company",
-      },
-    },
-  },
-  hy: {
-    header: {
-      callAria: "Զանգահարել Neetrino",
-      languageAria: "Փոխել լեզուն",
-      englishLabel: "EN",
-      armenianLabel: "HY",
-    },
-    hero: {
-      heading: "Դուք ստացել եք Neetrino նվեր քարտ",
-      imageAlt: "Դուք ստացել եք Neetrino նվեր քարտ",
-      descriptionLines: [
-        "Օգտագործեք այն որպես ուղիղ զեղչ ձեր հաջորդ",
-        "թվային պրոդուկտի համար Neetrino-ի հետ։",
-      ],
-      whatsappCta: "Գրեք մեզ WhatsApp-ով",
-      validityNote: "Գործում է ստացման պահից 3 ամիս։",
-    },
-    values: {
-      title: "Ի՞նչ է տալիս ձեր Gift Card-ը",
-      descriptionLines: [
-        "Ստացեք անմիջական նվազեցում ձեր ծրագրային",
-        "մշակման նախագծի վերջնական արժեքից։",
-      ],
-      availableValues: "Հասանելի արժեքներ",
-    },
-    usage: {
-      title: "Որտե՞ղ կարող եք օգտագործել այն",
-      rows: [
-        { title: "Կայք", subtitle: "Կորպորատիվ և landing էջեր, օնլայն շոփեր" },
-        { title: "Մոբայլ հավելված", subtitle: "iOS և Android" },
-        { title: "CRM համակարգեր", subtitle: "Բիզնես գործընթացների ավտոմատացում" },
-        { title: "SaaS պլատֆորմներ", subtitle: "Ամպային լուծումներ" },
-        { title: "AI լուծումներ", subtitle: "Մեքենայական ուսուցման մոդուլներ" },
-      ],
-    },
-    steps: {
-      titleLines: ["Օգտագործելու 4 պարզ", "քայլ"],
-      items: [
-        {
-          n: "1",
-          title: "Կապ WhatsApp-ով",
-          lines: [
-            "Կապնվեք մեզ հետ՝",
-            "ձեր քարտը ակտիվացնելու համար",
-          ],
-        },
-        {
-          n: "2",
-          title: "Ուղարկեք նկար / տվյալներ",
-          lines: [
-            "Ուղարկեք ձեր ֆիզիկական քարտի նկարը կամ",
-            "դրա նույնականացման տվյալները",
-          ],
-        },
-        {
-          n: "3",
-          title: "Ընտրեք պրոդուկտը",
-          lines: [
-            "Քննարկեք ձեր կարիքները և ընտրեք այն թվային",
-            "պրոդուկտը, որը ցանկանում եք մշակել",
-          ],
-        },
-        {
-          n: "4",
-          title: "Գումարը հանվում է",
-          lines: [
-            "Քարտի արժեքը ավտոմատ կերպով զեղչ է",
-            "ձեր նախագծի վերջնական հաշվարկից",
-          ],
-          glow: true,
-        },
-      ],
-    },
-    about: {
-      title: "Ստեղծեք Neetrino-ի հետ",
-      lines: [
-        "Neetrino-ն բարձրակարգ IT ընկերություն է,",
-        "որը մասնագիտացած է մաշտաբավորվող,",
-        "թվային էկոհամակարգերի",
-        "ստեղծման մեջ։ Սկսած բարդ CRM",
-        "ինտեգրումներից մինչև AI-ով աշխատող",
-        "ինտերֆեյսներ՝ մենք ստեղծում ենք այն",
-        "տեխնոլոգիան, որը ձևավորում է վաղվա օրը։",
-      ],
-      tags: [
-        { label: "Պրեմիում դիզայն" },
-        { label: "Արագ մշակում" },
-        { label: "Մասշտաբավորվող կառուցվածք" },
-      ],
-    },
-    finalCta: {
-      titleLines: ["Պատրա՞ստ եք օգտագործել ձեր", "Gift Card-ը"],
-      whatsappCta: "Գրեք մեզ WhatsApp-ով",
-      emailCta: "Կապ հաստատել",
-    },
-    footer: {
-      socialAria: "Սոցիալական հղումներ",
-      legal: {
-        copyrightPrefix: "Copyright © 2026 | Բոլոր իրավունքները պաշտպանված են, ստեղծել է",
         companyName: "Neetrino IT Company",
       },
     },

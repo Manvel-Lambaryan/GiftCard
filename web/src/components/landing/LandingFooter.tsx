@@ -147,9 +147,6 @@ export function LandingFooter() {
       </div>
       <SocialLinks />
       <ContactLinks />
-      <div className="relative h-5 w-[18px] opacity-70">
-        <Image alt="" src={ASSETS.shareIcon} fill className="object-contain" unoptimized />
-      </div>
       <FooterLegal />
     </footer>
   );
